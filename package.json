@@ -1,6 +1,6 @@
 {
   "name": "@skybuckflying/skygeminicli",
-  "version": "0.24.0-nightly.20260103.30f5c4af4-SkyGeminiCLI-v0.01",
+  "version": "0.24.0-nightly.20260103.30f5c4af4-SkyGeminiCLI-v0.3",
   "engines": {
     "node": ">=20.0.0"
   },

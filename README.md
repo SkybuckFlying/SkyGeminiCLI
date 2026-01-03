@@ -1,4 +1,4 @@
-# Gemini CLI
+# Sky Gemini CLI
 
 [![Gemini CLI CI](https://github.com/google-gemini/gemini-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/google-gemini/gemini-cli/actions/workflows/ci.yml)
 [![Gemini CLI E2E (Chained)](https://github.com/google-gemini/gemini-cli/actions/workflows/chained_e2e.yml/badge.svg)](https://github.com/google-gemini/gemini-cli/actions/workflows/chained_e2e.yml)
@@ -8,13 +8,29 @@
 
 ![Gemini CLI Screenshot](./docs/assets/gemini-screenshot.png)
 
-Gemini CLI is an open-source AI agent that brings the power of Gemini directly
+Sky Gemini CLI is a custom build of Google Gemini CLI
+
+This custom build has a special /model command.
+
+After typing the /model command, manual can be chosen.
+
+After manual is chosen the skygeminicli will fetch all available models, this only works if the authentication method is GEMINI_API_KEY, it does not work for OAuth mode.
+
+If authentication mode is OAuth /model manual falls back to a default list, this may still work.
+
+Gemini 3.0 Flash is also supported as well as other recent models.
+
+Sky Gemini CLI is an open-source AI agent that brings the power of Gemini directly
 into your terminal. It provides lightweight access to Gemini, giving you the
 most direct path from your prompt to our model.
 
+Install globally via special command for Windows 11, x64:
+
+npm install -g @skybuckflying/skygeminicli@0.24.0-nightly.20260103.30f5c4af4-SkyGeminiCLI-v0.3
+
 Learn all about Gemini CLI in our [documentation](https://geminicli.com/docs/).
 
-## 🚀 Why Gemini CLI?
+## 🚀 Why Sky Gemini CLI?
 
 - **🎯 Free tier**: 60 requests/min and 1,000 requests/day with personal Google
   account.
@@ -45,8 +61,14 @@ npx https://github.com/google-gemini/gemini-cli
 #### Install globally with npm
 
 ```bash
-npm install -g @google/gemini-cli
+npm install -g @skybuckflying/skygeminicli@0.24.0-nightly.20260103.30f5c4af4-SkyGeminiCLI-v0.3
 ```
+
+(After installation, close terminal and open new terminal this will load updated path environment variable)
+
+To start type/run:
+
+skygeminicli
 
 #### Install globally with Homebrew (macOS/Linux)
 
